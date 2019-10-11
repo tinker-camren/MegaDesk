@@ -1,0 +1,13 @@
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\bin\Debug\MegaDesk-Tinker.exe.config
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\bin\Debug\MegaDesk-Tinker.exe
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\bin\Debug\MegaDesk-Tinker.pdb
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk-Tinker.csprojAssemblyReference.cache
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.AddQuote.resources
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.MainMenu.resources
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.Properties.Resources.resources
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk-Tinker.csproj.GenerateResource.cache
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk-Tinker.exe
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk-Tinker.pdb
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.DisplayQuote.resources
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.SearchQuotes.resources
+C:\Users\CNTin\source\repos\CIT-365-git\MegaDesk-Tinker\MegaDesk-Tinker\obj\Debug\MegaDesk_Tinker.ViewAllQuotes.resources
