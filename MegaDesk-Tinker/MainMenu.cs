@@ -21,6 +21,7 @@ namespace MegaDesk_Tinker
         public MainMenu()
         {
             InitializeComponent();
+            DeskQuote.getRushValues();
         }
 
         private void addNewQuoteButton_Click(object sender, EventArgs e)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace MegaDesk_Tinker
 {
@@ -17,6 +18,9 @@ namespace MegaDesk_Tinker
         double rushPricing;
         double materialCost;
         double quotePrice;
+        static string rushValuesPath = @"C:\Users\CNTin\Source\Repos\tinker-camren\MegaDesk\MegaDesk-Tinker\Config\rushOrderPrices.txt";        
+        static string[] rushValuesStr = File.ReadAllLines(rushValuesPath);
+        static List<double> rushValues = new List<double>(); 
 
         public string CustomerName { get => customerName; set => customerName = value; }
         public int RushDays { get => rushDays; set => rushDays = value; }
@@ -24,6 +28,14 @@ namespace MegaDesk_Tinker
         internal Desk DeskObject { get => deskObject; set => deskObject = value; }
         public double QuotePrice { get => quotePrice; set => quotePrice = value; }
 
+        public static void getRushValues() 
+        {
+        foreach (string str in rushValuesStr) 
+            {
+                rushValues.Add(Double.Parse(str));
+            }
+        }
+        
         public void calcSurfaceArea()
         {
             surfaceArea = deskObject.Width * deskObject.Depth;
@@ -38,27 +50,27 @@ namespace MegaDesk_Tinker
         {
             if (rushDays == 3)
             {
-                rushPricing = 60;
+                rushPricing = rushValues[0];
                 if (surfaceArea > 1000 && surfaceArea < 2000)
-                    rushPricing += 10;
+                    rushPricing = rushValues[1];
                 else if (surfaceArea > 2000)
-                    rushPricing += 20;
+                    rushPricing = rushValues[2];
             }
             else if (rushDays == 5)
             {
-                rushPricing = 40;
+                rushPricing = rushValues[3];
                 if (surfaceArea > 1000 && surfaceArea < 2000)
-                    rushPricing += 10;
+                    rushPricing = rushValues[4];
                 else if (surfaceArea > 2000)
-                    rushPricing += 20;
+                    rushPricing = rushValues[5];
             }
             else if (rushDays == 7)
             {
-                rushPricing = 30;
+                rushPricing = rushValues[6];
                 if (surfaceArea > 1000 && surfaceArea < 2000)
-                    rushPricing += 5;
+                    rushPricing = rushValues[7];
                 else if (surfaceArea > 2000)
-                    rushPricing += 10;
+                    rushPricing = rushValues[8];
             } 
             else
             {
