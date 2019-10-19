@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace MegaDesk_Tinker
 {
@@ -48,5 +50,36 @@ namespace MegaDesk_Tinker
         {
 
         }
+        private void saveQuote_Click(object sender, EventArgs e)
+        {
+            SaveQuote saveQuote = new SaveQuote(
+                quote.CustomerName,
+                quote.RushDays,
+                quote.QuoteDate,
+                quote.SurfaceArea,
+                quote.RushPricing,
+                quote.MaterialCost,
+                quote.QuotePrice, 
+                quote.DeskObject.Width, 
+                quote.DeskObject.Depth, 
+                quote.DeskObject.Height, 
+                quote.DeskObject.NumDrawers, 
+                quote.DeskObject.MaterialString);
+            string filePath = @"C:\Users\CNTin\Source\repos\tinker-camren\MegaDesk\MegaDesk-Tinker\Config\quotes.json";
+            StreamReader reader = new StreamReader(filePath);
+            string json = reader.ReadToEnd();
+            List<SaveQuote> quotes = new List<SaveQuote>();
+
+            quotes = JsonConvert.DeserializeObject<List<SaveQuote>>(json);
+
+            reader.Close();
+            quotes.Add(saveQuote);
+            StreamWriter writer = new StreamWriter(filePath);
+            string jsonString = JsonConvert.SerializeObject(quotes);
+
+            writer.Write(jsonString);
+            writer.Close();
+        }
+
     }
 }

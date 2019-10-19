@@ -27,6 +27,9 @@ namespace MegaDesk_Tinker
         public DateTime QuoteDate { get => quoteDate; set => quoteDate = value; }
         internal Desk DeskObject { get => deskObject; set => deskObject = value; }
         public double QuotePrice { get => quotePrice; set => quotePrice = value; }
+        public double RushPricing { get => rushPricing; set => rushPricing = value; }
+        public double MaterialCost { get => materialCost; set => materialCost = value; }
+        public double SurfaceArea { get => surfaceArea; set => surfaceArea = value; }
 
         public static void getRushValues() 
         {
